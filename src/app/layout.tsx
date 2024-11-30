@@ -4,6 +4,15 @@ import "./globals.css";
 import Header from "./components/Header";
 import {ThemeProvider} from 'next-themes'
 import Themecom from "./components/themecomponent";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs'
+import { ThemeModeScript } from "flowbite-react";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -26,7 +35,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider>
     <html lang="en" suppressContentEditableWarning>
+      <head>
+        <ThemeModeScript />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -38,5 +51,6 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
+    </ClerkProvider>
   );
 }
