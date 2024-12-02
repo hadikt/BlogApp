@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import {ThemeProvider} from 'next-themes'
 import Themecom from "./components/Themecomponent";
 import { ClerkProvider } from '@clerk/nextjs'; // Remove unnecessary imports like SignInButton if unused
-
+// import { ClerkProvider } from './../../node_modules/@clerk/nextjs/dist/index'; 
 import { ThemeModeScript } from "flowbite-react";
 
 const geistSans = localFont({
