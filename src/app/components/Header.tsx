@@ -20,7 +20,7 @@ function Header() {
         className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
       >
         <span className="px-3 py-1 bg-gradient-to-r from-slate-700 via-purple-500 to-pink-500 rounded-full text-white shadow-lg animate-pulse">
-          Hadi's
+          Hadi&apos;s
         </span>
         <span className="text-gray-800 dark:text-gray-200">Blog</span>
       </Link>
