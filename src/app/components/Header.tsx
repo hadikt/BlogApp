@@ -1,5 +1,4 @@
 'use client';
-
 import { Button, Navbar, TextInput } from "flowbite-react";
 import Link from "next/link";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -8,6 +7,8 @@ import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { dark, neobrutalism } from "@clerk/themes";
+
+// Rest of the file
 
 function Header() {
   const path = usePathname();
